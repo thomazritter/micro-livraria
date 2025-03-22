@@ -19,3 +19,7 @@ message ProductResponse {
 message ProductsResponse {
     repeated ProductResponse products = 1;
 }
+
+message Payload {
+    int32 id = 1;
+}
