@@ -46,7 +46,7 @@ app.get('/shipping/:cep', (req, res, next) => {
  * Consulta um produto específico
  */
 app.get('/product/:id', (req, res, next) => {
-    inventory.searchProductByID({ id: req.params.id }, (err, product) => {
+    inventory.SearchProductByID({ id: req.params.id }, (err, product) => {
         if (err) {
             console.error(err);
             res.status(500).send({ error: 'something failed :(' });
